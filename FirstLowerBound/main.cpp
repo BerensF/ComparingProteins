@@ -30,7 +30,7 @@ struct thread_data {
 	vector< vector <double> > points1;
 	vector< vector <double> > points2;
 };
-void *Thread(void *threadarg);
+void *Thread(void *threadarg); // Threadfunction for multithreading
 
 int main(int argc, char *argv[])
 {

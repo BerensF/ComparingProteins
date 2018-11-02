@@ -110,13 +110,9 @@ double flb(vector< vector <double> > &points1, vector< vector <double> > &points
 	vector<double> listEcc(number_of_selected_points+number_of_selected_points);
 	double u;
 	double out;
-	
 	dist_matrix(d1, points1); // calculation of the distance matrices
 	dist_matrix(d2, points2);
 
-	points1.clear(); // the coordinates of the points are not needed for the following calculation
-	points2.clear();
-	
 	all_eccentricities(d1, distribution1,ecc1); // calculation of all eccentricities
 	all_eccentricities(d2, distribution2,ecc2);
 

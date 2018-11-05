@@ -48,7 +48,7 @@ if (length(args)<1) {
 parameterfile <- args[1]
 parameter <- read.table(parameterfile, sep=c("=", " = ", "= ", " ="),as.is = T)
 
-if(NROW(parameter) != 5)
+if(NROW(parameter) != 6)
 {
   stop("Wrong number of parameters")
 }
@@ -56,11 +56,12 @@ if(NROW(parameter) != 5)
 parameter[,1] <- gsub(" ", "",parameter[,1], fixed = TRUE)
 parameter[,2] <- gsub(" ", "",parameter[,2], fixed = TRUE)
 
-pathToDataDirectory <- paste(as.character(parameter[sum((parameter[,1] == "PathToData")*1:5),2]),"/",sep="")
-pathToOutputDirectory <- paste(as.character(parameter[sum((parameter[,1] == "PathToOutput")*1:5),2]),"/",sep="")
-n <- as.numeric(as.character(parameter[sum((parameter[,1] == "n")*1:5),2]))
-m <-  as.numeric(as.character(parameter[sum((parameter[,1] == "m")*1:5),2]))
-pathToPrograms <- paste(as.character(parameter[sum((parameter[,1] == "PathToProgram")*1:5),2]),"/",sep="")
+pathToDataDirectory <- paste(as.character(parameter[sum((parameter[,1] == "PathToData")*1:6),2]),"/",sep="")
+pathToOutputDirectory <- paste(as.character(parameter[sum((parameter[,1] == "PathToOutput")*1:6),2]),"/",sep="")
+n <- as.numeric(as.character(parameter[sum((parameter[,1] == "n")*1:6),2]))
+m <-  as.numeric(as.character(parameter[sum((parameter[,1] == "m")*1:6),2]))
+PathToCPPProgram <- paste(as.character(parameter[sum((parameter[,1] == "PathToCPPProgram")*1:5),2]),"/",sep="")
+PathToRProgram <- paste(as.character(parameter[sum((parameter[,1] == "PathToRProgram")*1:5),2]),"/",sep="")
 
 if(!NROW(pathToDataDirectory))
 {

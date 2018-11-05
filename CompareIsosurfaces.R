@@ -71,8 +71,7 @@ if(!NROW(PathToRProgram))
 }
 
 
-source(paste(pathToPrograms,"/EMDandClustering/LowerBound.R",sep=""))
-pathToCPP <- paste(pathToPrograms,"/FirstLowerBound/main.exe",sep="")
+source(pathToPrograms)
 # -----------------------------------------------------------
 
 # only path with existing .dx files will be used
@@ -95,7 +94,7 @@ pb <- tkProgressBar(title = "Calculation of isosurface comparison", min = 0,
                     max = NROW(ListOfProtNames)^2+NROW(ListOfProtNames), width = 300)
 # negative
 # calculation of all pairwise lower bounds
-AllvsAll.LowerBound(ListOfProtNames,pathToDataDirectory,pathToOutputDirectory,pathToCPP,n,m,pot="negative",pb)
+AllvsAll.LowerBound(ListOfProtNames,pathToDataDirectory,pathToOutputDirectory,PathToCPPProgram,n,m,pot="negative",pb)
 print("Finished lower bounds for negative isosurfaces")
 
 # calculation of all pairwise earth mover's distances
@@ -104,7 +103,7 @@ print("Finished EMD for negative isosurfaces")
 
 # positive
 # calculation of all pairwise lower bounds
-AllvsAll.LowerBound(ListOfProtNames,pathToDataDirectory,pathToOutputDirectory,pathToCPP,n,m,pot="positive",pb)
+AllvsAll.LowerBound(ListOfProtNames,pathToDataDirectory,pathToOutputDirectory,PathToCPPProgram,n,m,pot="positive",pb)
 print("Finished lower bounds for positive isosurfaces")
 
 close(pb)

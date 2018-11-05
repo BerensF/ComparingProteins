@@ -71,7 +71,7 @@ if(!NROW(PathToRProgram))
 }
 
 
-source(pathToPrograms)
+source(PathToRProgram)
 # -----------------------------------------------------------
 
 # only path with existing .dx files will be used

@@ -16,5 +16,5 @@ m = 10
 
 ############################################################################################
 # Path to the program, where the C++ and R code is stored, only change if the file is moved
-PathToCPProgram= C:/Users/Berens/Documents/Master/HIWI/GitHub/LowerBound/
-PathToRrogram= C:/Users/Berens/Documents/Master/HIWI/GitHub/EMDandClustering/
+PathToCPPProgram= C:/Users/Berens/Documents/Master/HIWI/GitHub/LowerBound/
+PathToRProgram= C:/Users/Berens/Documents/Master/HIWI/GitHub/EMDandClustering/

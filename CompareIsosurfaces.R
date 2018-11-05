@@ -9,30 +9,6 @@
 # -------------------------------------------------------------
 # examplecall:
 # ./AllvsAll.R [parameterfile]
-# -------------------------------------------------------------
-# Possible parameterfile:
-#
-#
-# # Parameter file for the clustering of protein by there isosurfaces
-# comments are marked with an '#'
-# '=' is a seperator between paramtername and parameter
-#
-# Full Path to the protein files
-# PathToData= C:/Users/Berens/Documents/Master/HIWI/Output/
-#   
-# # Full path to the directory where the output should be stored
-# PathToOutput= C:/Users/Berens/Documents/Master/HIWI/GitHub/Out/
-# 
-# # Number of points to select, normally 100
-# n = 5
-# 
-# # Numbe of of rounds, normaly 500
-# #m = 10
-# 
-# ############################################################################################
-# # Path to the program, where the C++ and R code is stored, only change if the file is moved
-# PathToProgram= C:/Users/Berens/Documents/Master/HIWI/GitHub/
-# 
 #----------------------------------------------------------------------------------------------
 
 args = commandArgs(trailingOnly=TRUE)

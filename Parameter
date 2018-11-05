@@ -14,7 +14,8 @@ n = 5
 # Numbe of of rounds, normaly 500
 m = 10
 
+
 ############################################################################################
 # Path to the program, where the C++ and R code is stored, only change if the file is moved
-PathToCPPProgram= C:/Users/Berens/Documents/Master/HIWI/GitHub/LowerBound/
-PathToRProgram= C:/Users/Berens/Documents/Master/HIWI/GitHub/EMDandClustering/
+PathToCPPProgram= C:/Users/Berens/Documents/Master/HIWI/GitHub/LowerBound/AllLowerB_EMD_Clust.R
+PathToRProgram= C:/Users/Berens/Documents/Master/HIWI/GitHub/EMDandClustering/main.exe

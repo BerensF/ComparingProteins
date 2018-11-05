@@ -12,7 +12,7 @@ PathToOutput= C:/Users/Berens/Documents/Master/HIWI/GitHub/Out/
 n = 5
 
 # Numbe of of rounds, normaly 500
-#m = 10
+m = 10
 
 ############################################################################################
 # Path to the program, where the C++ and R code is stored, only change if the file is moved

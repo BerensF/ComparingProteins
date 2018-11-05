@@ -18,4 +18,4 @@ m = 10
 ############################################################################################
 # Path to the program, where the C++ and R code is stored, only change if the file is moved
 PathToRProgram= C:/Users/Berens/Documents/Master/HIWI/05.11/ComparingProteins-master/EMDandClustering/AllLowerB_EMD_Clust.R
-PathToCPPProgram= C:/Users/Berens/Documents/Master/HIWI/05.11/ComparingProteins-master/LowerBound/main.exe
+PathToCPPProgram= C:/Users/Berens/Documents/Master/HIWI/05.11/ComparingProteins-master/FirstLowerBound/main.exe

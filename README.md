@@ -10,13 +10,14 @@ Call:
 ## Parameterfile
 The _parameterfile_ contains following parameters:
 
-| Name              | Parameter                                | Description                                                                                           |
-|-------------------|------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| PathToData        | .../ProteinComp/Input/                   | path to the protein data, every protein in it own folder that contain the .dx file                    |
-| PathToOutput      | .../ProteinComp/Output/                  | path to the Outputfolder                                                                              |
-| n                 | 100                                      | How many points will be selected in every round, the runtime is in O(m n^2)                           |
-| m                 | 500                                      | How often the calculation will be done, the runtime is in O(m n^2)                                    |
-| PathToProgram     | .../ComparingProteins/                   | path of to this repository on your machine                                                            |
+| Name                        | Parameter                                      | Description                                                                                           |
+|-----------------------------|------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| PathToData                  | .../ProteinComp/Input/                         | path to the protein data, every protein in it own folder that contain the .dx file                    |
+| PathToOutput                | .../ProteinComp/Output/                        | path to the Outputfolder                                                                              |
+| n                           | 100                                            | How many points will be selected in every round, the runtime is in O(m n^2)                           |
+| m                           | 500                                            | How often the calculation will be done, the runtime is in O(m n^2)                                    |
+| PathToCPProgram     | .../ComparingProteins/FirstLowerBound/main  | path of to the Cpp program on your machine                                                            |
+| PathToRProgram     | .../ComparingProteins/EMDandClustering/LowerBound  | path of to the R program on your machine                                                            |
 
 Comments can be added by a '#' in the parameterfile. The parametername and parameter have to be seperated by a '='
 

@@ -90,7 +90,7 @@ if(!NROW(pathToPrograms))
 
 
 source(paste(pathToPrograms,"/EMDandClustering/LowerBound.R",sep=""))
-pathToCPP <- paste(pathToPrograms,"/LowerBound/main.exe",sep="")
+pathToCPP <- paste(pathToPrograms,"/FirstLowerBound/main.exe",sep="")
 # -----------------------------------------------------------
 
 # only path with existing .dx files will be used

@@ -36,8 +36,8 @@ pathToDataDirectory <- paste(as.character(parameter[sum((parameter[,1] == "PathT
 pathToOutputDirectory <- paste(as.character(parameter[sum((parameter[,1] == "PathToOutput")*1:6),2]),"/",sep="")
 n <- as.numeric(as.character(parameter[sum((parameter[,1] == "n")*1:6),2]))
 m <-  as.numeric(as.character(parameter[sum((parameter[,1] == "m")*1:6),2]))
-PathToCPPProgram <- paste(as.character(parameter[sum((parameter[,1] == "PathToCPPProgram")*1:5),2]),"/",sep="")
-PathToRProgram <- paste(as.character(parameter[sum((parameter[,1] == "PathToRProgram")*1:5),2]),"/",sep="")
+PathToCPPProgram <- paste(as.character(parameter[sum((parameter[,1] == "PathToCPPProgram")*1:6),2]),"/",sep="")
+PathToRProgram <- paste(as.character(parameter[sum((parameter[,1] == "PathToRProgram")*1:6),2]),"/",sep="")
 
 if(!NROW(pathToDataDirectory))
 {

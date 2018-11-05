@@ -83,10 +83,15 @@ if(!NROW(m))
   stop("m not mentioned in the parameterfile. Please add a line like this:\n
        m=....")
 }
-if(!NROW(pathToPrograms))
+if(!NROW(PathToCPPProgram))
 {
-  stop("pathToPrograms not mentioned in the parameterfile. Please add a line like this:\n
-       pathToPrograms=....")
+  stop("PathToCPPProgram not mentioned in the parameterfile. Please add a line like this:\n
+       PathToCPPProgram=....")
+}
+if(!NROW(PathToRProgram))
+{
+  stop("PathToRProgram not mentioned in the parameterfile. Please add a line like this:\n
+       PathToRProgram=....")
 }
 
 

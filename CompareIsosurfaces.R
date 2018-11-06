@@ -84,6 +84,8 @@ for(f in dir(pathToDataDirectory))
   }
 }
 
+print(paste("Starting the calculation of the comparison of", NROW(ListOfProtNames), "proteins from",pathToDataDirectory,". As parameters are set n =",n,"m =",m,".",sep=" "))
+
 # Step 1 #####################################
 # creation of the .pts files if not existing
 CreatALLdx(ListOfProtNames,pathToDataDirectory)

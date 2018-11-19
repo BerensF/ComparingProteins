@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
 		rc = pthread_create(&threads[i], NULL, Thread, (void *)&td[i]);
 
 		if (rc) {
-			cout << "Error:unable to create thread," << rc << endl;
+			cerr << "Error:unable to create thread," << rc << endl;
 			exit(-1);
 		}
 	}
@@ -103,7 +103,7 @@ void *Thread(void *threadarg) {
 		selected_points1[1][i] = my_data->points1[1][random_indices_list[i]];
 		selected_points1[2][i] = my_data->points1[2][random_indices_list[i]];
 		}
-		
+
 		random_indices_list.clear();
 		random_indices_list = random_points(my_data->points2[0].size(),number_of_selected_points); // Select number_of_selected_points indices randomly
 

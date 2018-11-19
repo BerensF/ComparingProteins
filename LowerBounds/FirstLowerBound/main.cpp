@@ -8,7 +8,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "fstream"
 #include <time.h>
 #include <pthread.h>
 #include "first_lower_bound.h"

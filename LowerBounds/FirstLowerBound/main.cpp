@@ -9,11 +9,11 @@
 #include <string>
 #include <vector>
 #include "fstream"
-#include "reading.h"
-#include "random_points.h"
 #include <time.h>
 #include <pthread.h>
 #include "first_lower_bound.h"
+#include "../reading.h"
+#include "../random_points.h"
 
 using namespace std;
 

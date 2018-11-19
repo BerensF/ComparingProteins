@@ -11,7 +11,7 @@
 #ifndef FIRST_LOWER_BOUND_H_
 #define FIRST_LOWER_BOUND_H_
 
-#include "mathFunctions.h"
+#include "../mathFunctions.h"
 #include <vector>
 #include <algorithm>
 #include <time.h>

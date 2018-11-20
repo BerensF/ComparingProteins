@@ -42,35 +42,31 @@ void reading(string Dataname, vector< vector <double> > &points)
 	}else{
 		input >> word; // header
 
-//		cout << "Starting reading points from " << Dataname << "\n";
-
 		while(!input.eof())
 		{
 			input >> line;
 
-//			x value
+			// x value
 			pos_sep = line.find(";");
 			word = line.substr (0,pos_sep);
 			strcpy(zwsp, word.c_str());
 			points[0].push_back(atof(zwsp));
 			line.erase(0,pos_sep+1);
 
-//			 y value
+			// y value
 			pos_sep = line.find(";");
 			word = line.substr (0,pos_sep);
 			strcpy(zwsp, word.c_str());
 			points[1].push_back(atof(zwsp));
 			line.erase(0,pos_sep+1);
 
-//			z value
+			// z value
 			pos_sep = line.find(";");
 			word = line.substr (0,pos_sep);
 			strcpy(zwsp, word.c_str());
 			points[2].push_back(atof(zwsp));
 			line.erase(0,pos_sep+1);
 		}
-
-//		cout << "End of reading points.\n";
 	}
 }
 

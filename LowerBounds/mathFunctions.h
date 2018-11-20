@@ -12,7 +12,6 @@
 #define MATHFUNCTIONS_H_
 
 #include <cmath>
-#include <vector>
 
 using namespace std;
 

@@ -11,11 +11,6 @@
 #ifndef RANDOM_POINTS_H_
 #define RANDOM_POINTS_H_
 
-#include <vector>
-#include <cstdlib>
-#include <time.h>
-#include "mathFunctions.h"
-
 using namespace std;
 
 vector<unsigned int> random_points(unsigned int number_of_all_points, unsigned int number_to_selected)

@@ -59,3 +59,8 @@ Comments can be added by a '#' in the parameterfile. The parametername and param
 |       |  Dendrogram_UPGMA_Mean
 |       |  Dendrogram_UPGMA_Neg
 |       |  Dendrogram_UPGMA_Pos
+
+
+## Lower Bounds
+
+There are three lower bounds of the Gromov-Wasserstein distance in this repositories. The first lower bound has a time complexity of O(n^2) the second O(n^4) and the third O(n^5). It is recommended to use the first lower bound, since it is much fuster than the other two. For more details see "Quantitative comparison of protein isosurfaces with approximated Gromov-Wasserstein-distance" from Felix Berens or "Gromov-Wasserstein Distances and the Metric Approach  to  Object  Matching" from Facundo Mémoli.

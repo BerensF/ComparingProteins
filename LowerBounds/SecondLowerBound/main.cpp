@@ -10,7 +10,7 @@
 #include <vector>
 #include <time.h>
 #include <pthread.h>
-#include "third_lower_bound.h"
+#include "second_lower_bound.h"
 #include "../reading.h"
 #include "../random_points.h"
 

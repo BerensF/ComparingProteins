@@ -21,9 +21,6 @@
 #ifndef READING_H_
 #define READING_H_
 
-#include <iostream>
-#include <vector>
-#include <string>
 #include "string.h"
 #include "stdlib.h"
 #include "fstream"

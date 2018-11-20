@@ -59,7 +59,7 @@ Comments can be added by a '#' in the parameterfile. The parametername and param
 |       |  Dendrogram_UPGMA_Mean
 |       |  Dendrogram_UPGMA_Neg
 |       |  Dendrogram_UPGMA_Pos
-
+'''
 
 ## Lower Bounds
 

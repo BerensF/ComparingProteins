@@ -17,7 +17,6 @@
 
 using namespace std;
 
-
 void list_of_unique_eccent(vector<double> &ecc1, vector<double> &ecc2, vector<double> &listEcc);
 double eccentricities(vector< vector <double> > &d, vector<double> &distribution, int i);
 void all_eccentricities(vector< vector <double> > &d, vector<double> &distribution,vector<double> &ecc);

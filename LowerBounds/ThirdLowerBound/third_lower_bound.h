@@ -11,7 +11,7 @@
 #ifndef THIRD_LOWER_BOUND_H_
 #define THIRD_LOWER_BOUND_H_
 
-#include "CPPCode/mathFunctions.h"
+#include "../mathFunctions.h"
 #include <vector>
 #include <algorithm>
 #include "lp_lib.h"

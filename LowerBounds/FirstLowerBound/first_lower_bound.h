@@ -33,6 +33,10 @@ void list_of_unique_eccent(vector<double> &ecc1, vector<double> &ecc2, vector<do
 	for(unsigned int i=0; i < ecc1.size(); i++)
 	{
 		listEcc[i] = ecc1[i];
+	}
+	
+	for(unsigned int i=0; i < ecc2.size(); i++)
+	{
 		listEcc[i+ecc1.size()] = ecc2[i];
 	}
 

@@ -107,7 +107,7 @@ double flb(vector< vector <double> > &points1, vector< vector <double> > &points
 	vector<double> ecc2(number_of_selected_points);
 	vector<double> listEcc(number_of_selected_points+number_of_selected_points);
 	double u;
-	double out;
+	double out = 0;
 	dist_matrix(d1, points1); // calculation of the distance matrices
 	dist_matrix(d2, points2);
 

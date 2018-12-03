@@ -12,12 +12,12 @@ The _parameterfile_ contains following parameters:
 
 | Name                        | Parameter                                      | Description                                                                                           |
 |-----------------------------|------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| PathToData                  | .../ProteinComp/Input/                         | path to the protein data, every protein in it own folder that contain the .dx file                    |
-| PathToOutput                | .../ProteinComp/Output/                        | path to the Outputfolder                                                                              |
+| PathToData                  | .../ProteinComp/Input/                         | Path to the protein data, every protein in it own folder that contain the .dx file                    |
+| PathToOutput                | .../ProteinComp/Output/                        | Path to the Outputfolder                                                                              |
 | n                           | 100                                            | How many points will be selected in every round                          |
 | m                           | 500                                            | How often the calculation will be done                                    |
-| PathToCPProgram     | .../ComparingProteins/LowerBounds/FirstLowerBound/main  | path of to the Cpp program on your machine                                                            |
-| PathToRProgram     | .../ComparingProteins/EMDandClustering/LowerBound  | path of to the R program on your machine                                                            |
+| PathToCPProgram     | .../ComparingProteins/LowerBounds/FirstLowerBound/main  | Path of to the Cpp program on your machine                                                            |
+| PathToRProgram     | .../ComparingProteins/EMDandClustering/LowerBound  | Path of to the R program on your machine                                                            |
 
 Comments can be added by a '#' in the parameterfile. The parametername and parameter have to be seperated by a '='
 

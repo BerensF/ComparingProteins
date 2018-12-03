@@ -14,8 +14,8 @@ The _parameterfile_ contains following parameters:
 |-----------------------------|------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | PathToData                  | .../ProteinComp/Input/                         | path to the protein data, every protein in it own folder that contain the .dx file                    |
 | PathToOutput                | .../ProteinComp/Output/                        | path to the Outputfolder                                                                              |
-| n                           | 100                                            | How many points will be selected in every round, the runtime is in O(m n^2)                           |
-| m                           | 500                                            | How often the calculation will be done, the runtime is in O(m n^2)                                    |
+| n                           | 100                                            | How many points will be selected in every round                          |
+| m                           | 500                                            | How often the calculation will be done                                    |
 | PathToCPProgram     | .../ComparingProteins/LowerBounds/FirstLowerBound/main  | path of to the Cpp program on your machine                                                            |
 | PathToRProgram     | .../ComparingProteins/EMDandClustering/LowerBound  | path of to the R program on your machine                                                            |
 

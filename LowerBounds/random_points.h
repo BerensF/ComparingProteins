@@ -51,14 +51,14 @@ vector<unsigned int> random_points(unsigned int number_of_all_points, unsigned i
 
 	for(unsigned int i = 0; i < number_of_all_points; i++)
 	{
-		list.push_back(i);
+		list_of_numbers.push_back(i);
 	}
 
 	for(unsigned int i = 0; i < number_to_selected; i++)
 	{
-		random_number = rand() % list.size();
-		out.push_back(list[random_number]);
-		list.erase(list.begin() + random_number);
+		random_number = rand() % list_of_numbers.size();
+		out.push_back(list_of_numbers[random_number]);
+		list_of_numbers.erase(list_of_numbers.begin() + random_number);
 	}
 
 	return(out);

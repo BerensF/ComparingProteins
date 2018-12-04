@@ -33,7 +33,7 @@ double euclidean_distance(double x1,double y1, double z1,double x2,double y2, do
 		Output
 		------
 		The output is a double, which is the euclidean distance between (x1,y1,z1) and (x2,y2,z2)
-		
+
 		Complexity
     		----------
 		O(1)

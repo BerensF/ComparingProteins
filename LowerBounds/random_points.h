@@ -26,7 +26,7 @@ vector<unsigned int> random_points(unsigned int number_of_all_points, unsigned i
 		
 		Output
 		------
-		Is a vector of size number_to_selected, filled with int
+		Is a vector of size number_to_selected, filled with the randomly drawn integers
 		
 		Complexity
     		----------

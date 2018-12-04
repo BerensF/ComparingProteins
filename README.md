@@ -17,7 +17,7 @@ The _parameterfile_ contains following parameters:
 | n                           | 100                                            | How many points will be selected in every round                          |
 | m                           | 500                                            | How often the calculation will be done                                    |
 | PathToCPProgram     | .../ComparingProteins/LowerBounds/FirstLowerBound/main  | Path of to the Cpp program on your machine                                                            |
-| PathToRProgram     | .../ComparingProteins/EMDandClustering/LowerBound  | Path of to the R program on your machine                                                            |
+| PathToRProgram     | .../ComparingProteins/EMDandClustering/AllLowerB_EMD_Clust.R  | Path of to the R program on your machine                                                            |
 
 Comments can be added by a '#' in the parameterfile. The parametername and parameter have to be seperated by a '='
 

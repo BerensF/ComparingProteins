@@ -68,5 +68,5 @@ For the third lower bound a linear program has to be solved. This is done with t
 
 ## FAQ
 
-### What can I do if i forgot a protein structure or have a unneeded structure in the Input folder?
+#### What can I do if i forgot a protein structure or have a unneeded structure in the Input folder?
 Just add the forgoten protein structure or delete the unneeded structure and rerun the program. The program autmatical recognises, which structures were already compared.

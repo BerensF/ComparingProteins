@@ -65,3 +65,8 @@ Comments can be added by a '#' in the parameterfile. The parametername and param
 
 There are three lower bounds of the Gromov-Wasserstein distance in this repositories. The first lower bound has a time complexity of O(n^2) the second O(n^4) and the third O(n^5). It is recommended to use the first lower bound, since it is much fuster than the other two. For more details see "Quantitative comparison of protein isosurfaces with approximated Gromov-Wasserstein-distance" from Felix Berens or "Gromov-Wasserstein Distances and the Metric Approach  to  Object  Matching" from Facundo Mémoli.  
 For the third lower bound a linear program has to be solved. This is done with the library lpsolve_5.5, which can be  downloaded here https://sourceforge.net/projects/lpsolve/files/lpsolve/5.5.2.0/lp_solve_5.5.2.0_source.tar.gz/download
+
+## FAQ
+
+### What can I do if i forgot a protein structure or have a unneeded structure in the Input folder?
+Just add the forgoten protein structure or delete the unneeded structure and rerun the program. The program autmatical recognises, which structures were already compared.

@@ -13,7 +13,8 @@
 
 args = commandArgs(trailingOnly=TRUE)
 if (length(args)<1) {
-  stop("Missing parameters to AllvsAll.R\n ./AllvsAll.R [pathToDataDirectory] [pathToOutputDirectory] [numberToSelect] [rounds]", call.=FALSE)
+  stop("Missing parameters to AllvsAll.R\n ./AllvsAll.R [pathToDataDirectory] [pathToOutputDirectory] [numberToSelect] 
+        [rounds]", call.=FALSE)
 }
 
 # File whith all protein data to compare
@@ -84,7 +85,8 @@ for(f in dir(pathToDataDirectory))
   }
 }
 
-print(paste("Starting the calculation of the comparison of", NROW(ListOfProtNames), "proteins from",pathToDataDirectory,". As parameters are set n =",n,"m =",m,".",sep=" "))
+print(paste("Starting the calculation of the comparison of", NROW(ListOfProtNames), "proteins from",pathToDataDirectory,
+              ". As parameters are set n =",n,"m =",m,".",sep=" "))
 
 # Step 1 #####################################
 # creation of the .pts files if not existing

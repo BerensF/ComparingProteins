@@ -165,7 +165,6 @@ double tlb(vector< vector <double> > &points1, vector< vector <double> > &points
 	lprec *lp;
 	double out;
 
-	const clock_t begin_time0 = clock();
 	dist_matrix(d1, points1);
 	dist_matrix(d2, points2);
 

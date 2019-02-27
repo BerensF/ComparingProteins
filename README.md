@@ -70,3 +70,14 @@ For the third lower bound a linear program has to be solved. This is done with t
 
 #### What can I do if i forgot a protein structure or have a unneeded structure in the Input folder?
 Just add the forgoten protein structure or delete the unneeded structure and rerun the program. The program autmatical recognises, which structures were already compared.
+
+#### I am only interested in the lower bound values of two specific protein structures (for example: Prot01 and Prot02), what can I do?
+For this you already need the files containing the coordinates on the isosurfaces (here those four: Prot01_pot_neg.pts , Prot02_pot_neg.pts , Prot01_pot_pos.pts , Prot_02_pot_pos.pts). Then you can start the lower bounds with the following call from the terminal:
+./main _inputfile1_ _inputfile2_ n m
+So for example if you are in the folder ProeinComp and want to compare Prot01 and Prot02 with 100 points each 500 times, you have to call those two lines:
+```bash
+./[pathToComparingProteins]/ComparingProteins/LowerBounds/FirstLowerBound/main Input/Prot01/Prot01_pot_neg.pts Input/Prot02/Prot02_pot_neg.pts
+'''
+'''bash
+./[pathToComparingProteins]/ComparingProteins/LowerBounds/FirstLowerBound/main Input/Prot01/Prot01_pot_pos.pts Input/Prot02/Prot02_pot_pos.pts
+'''

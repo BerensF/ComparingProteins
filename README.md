@@ -77,7 +77,7 @@ For this you already need the files containing the coordinates on the isosurface
 So for example if you are in the folder ProeinComp and want to compare Prot01 and Prot02 with 100 points each 500 times, you have to call those two lines:
 ```bash
 ./[pathToComparingProteins]/ComparingProteins/LowerBounds/FirstLowerBound/main Input/Prot01/Prot01_pot_neg.pts Input/Prot02/Prot02_pot_neg.pts
-'''
-'''bash
+```
+```bash
 ./[pathToComparingProteins]/ComparingProteins/LowerBounds/FirstLowerBound/main Input/Prot01/Prot01_pot_pos.pts Input/Prot02/Prot02_pot_pos.pts
-'''
+```

@@ -175,7 +175,7 @@ AllvsAll.Cluster <- function(PathToOutput,n)
   
   ProtList <- unique(c(as.character(data[,1]),as.character(data[,2])))
   
-  matr.Sum <- matrix(0,nrow = NROW(ProtList),ncol = NROW(ProtList), dimnames = list(ProtList,ProtList))
+  matr.Mean <- matrix(0,nrow = NROW(ProtList),ncol = NROW(ProtList), dimnames = list(ProtList,ProtList))
   matr.Pos <- matrix(0,nrow = NROW(ProtList),ncol = NROW(ProtList), dimnames = list(ProtList,ProtList))
   matr.Neg <- matrix(0,nrow = NROW(ProtList),ncol = NROW(ProtList), dimnames = list(ProtList,ProtList))
   matr.Max <- matrix(0,nrow = NROW(ProtList),ncol = NROW(ProtList), dimnames = list(ProtList,ProtList))
@@ -191,17 +191,17 @@ AllvsAll.Cluster <- function(PathToOutput,n)
         matr.Neg[j,i] <- data[k,4]
         matr.Max[i,j] <- max(data[k,3],data[k,4])
         matr.Max[j,i] <- matr.Max[i,j]
-        matr.Sum[i,j] <- 1/2*(data[k,3]+data[k,4])
-        matr.Sum[j,i] <- matr.Max[i,j]
+        matr.Mean[i,j] <- 1/2*(data[k,3]+data[k,4])
+        matr.Mean[j,i] <- matr.Mean[i,j]
       }
-      k<- k+1
+      k <- k+1
     }
   }
   
   agnes.average.Max <- agnes(x = matr.Max, diss = T,method = "average",keep.diss = F,keep.data = F)
   agnes.average.Neg <- agnes(x = matr.Neg, diss = T,method = "average",keep.diss = F,keep.data = F)
   agnes.average.Pos <- agnes(x = matr.Pos, diss = T,method = "average",keep.diss = F,keep.data = F)
-  agnes.average.Sum <- agnes(x = matr.Sum, diss = T,method = "average",keep.diss = F,keep.data = F)
+  agnes.average.Mean <- agnes(x = matr.Mean, diss = T,method = "average",keep.diss = F,keep.data = F)
   
   
   mydendrogramplot(agnes.average.Max,title = "UPGMA, Maximum(Neg,Pos)")
@@ -213,7 +213,7 @@ AllvsAll.Cluster <- function(PathToOutput,n)
   mydendrogramplot(agnes.average.Pos,title = "UPGMA, only positive")
   ggsave(filename = paste(PathToOutput,"/Dendrogram_UPGMA_Pos.pdf",sep=""),height=7, width = 14)
   
-  mydendrogramplot(agnes.average.Sum,title = "UPGMA, Mean")
+  mydendrogramplot(agnes.average.Mean,title = "UPGMA, Mean")
   ggsave(filename = paste(PathToOutput,"/Dendrogram_UPGMA_Mean.pdf",sep=""),height=7, width = 14)
 }
 
